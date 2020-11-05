@@ -1,0 +1,8 @@
+- id: terraform-fmt
+  name: Terraform fmt (Format)
+  description: Rewrite all Terraform files (.tf) to canonical format.
+  entry: ./terraform-fmt.sh
+  files: (\.tf|\.tfvars)$
+  # ignore the .terraform directory
+  exclude: \.terraform\/.*$
+  language: script
